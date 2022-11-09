@@ -1,0 +1,86 @@
+article {
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    /* background: white; */
+    margin-top: 10px;
+    padding-bottom: 22px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 70px;
+    color: #FECEA8;
+    text-shadow: black 0 0 4px;
+}
+
+.contact {
+    width: 50%;
+    height: 300px;
+    background: #2A363B;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    color: white;
+}
+
+.contact form {
+    margin: auto;
+    width: 70%;
+}
+
+.contact form #name {
+    margin-top: 5px;
+}
+
+.contact form input, textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    color: white;
+    border: #FECEA8 1px solid;
+}
+
+.contact textarea:focus, input:focus, input[type]:focus {
+    outline: 0 none;
+}
+
+
+.contact form #message {
+    padding-bottom: 50px;
+    resize: none;
+}
+
+.contact button {
+    transition: all .5s;
+    display: block;
+    width: 300px;
+    margin: auto;
+    border-radius: 4px;
+    border: solid #FECEA8 2px;
+    padding: 5px;
+    margin-bottom: 3px;
+    color: #FECEA8;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+}
+
+.contact button:hover {
+    cursor: pointer;
+    background: #FECEA8;
+    color: white;
+    text-shadow: black;
+}

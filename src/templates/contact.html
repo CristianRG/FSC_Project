@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles-contact.css')}}">
+
+<article>
+    <section>
+        <h1><span>Contactanos</span></h1>
+        <div class="contact">
+            <form action="https://formsubmit.co/b332fa6ce3d5f966ff4c455a965a7398" method="POST">
+                <input class="formularios" type="text" name="name" id="name" placeholder="name" onkeydown="campos()">
+                <input class="formularios" type="email" name="email" id="email" placeholder="example@gmail.com" onkeydown="campos()">
+                <textarea name="message" id="message" rows="5" onkeydown="campos()"></textarea>
+                <button id="send">Enviar</button>
+            </form>
+        </div>
+    </section>
+</article>
+<script src="{{url_for('static', filename='js/contact.js')}}"></script>
+{% endblock %}

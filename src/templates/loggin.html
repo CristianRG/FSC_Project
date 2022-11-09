@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}Loggin{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles-contact.css')}}">
+
+<article>
+    <section>
+        <h1><span>Inicia sesion</span></h1>
+        <div class="contact">
+            <form action="" method="POST">
+                <input class="formularios" name="email" type="email" id="email" placeholder="Correo electronico">
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+</article>
+
+{% endblock %}

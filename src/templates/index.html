@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles-index.css')}}">
+<script src="//code.jivosite.com/widget/9smXlsaNvY" async></script>
+<article>
+    <section>
+        <div class="campus">
+            <img src="{{url_for('static', filename='img/Utl-leon.jpg')}}" alt="">
+        </div>
+    </section>
+    <section>
+        <h1>Objetivo</h1>
+        <div class="container-info">
+            <div class="information">
+                <p>Para mantener una comunidad universitaria tranquila; es necesario encargarnos de que justamente se cumpla con su seguridad.
+                   Nuestro principal objetivo es mantener la seguridad de los universitarios manteniendolos al tanto de los acontecimientos que
+                   suceden a sus alrededores; ademas de informar a los departamentos de seguridad para acudir a los estudiantes.
+                   <br>
+                   <br>
+                   Lograremos esto por medio de diferentes tecnologías que permitan el almacenamiento de los datos y registros acontecidos en la
+                   comunidad estudiantil, asi como, avisar a las autoridades de forma casi "automática".
+                </p>
+                <img src="{{url_for('static', filename='img/security-info.jpeg')}}" alt="ssss">
+            </div>
+            <div class="btn-download">
+                <a href="">GET START!</a>
+            </div>
+        </div>
+    </section>
+</article>
+
+<div class="slider-box">
+    <div class="slider">
+        <ul>
+            <li><img src="{{url_for('static', filename='img/app1.jpeg')}}" alt=""></li>
+            <li><img src="{{url_for('static', filename='img/app2.jpeg')}}" alt=""></li>
+            <li><img src="{{url_for('static', filename='img/app3.jpeg')}}" alt=""></li>
+            <li><img src="{{url_for('static', filename='img/app4.jpeg')}}" alt=""></li>
+        </ul>
+    </div>
+</div>
+<!-- <article>
+    <section>
+        <h2>plantillas recientes</h2>
+        <div class="gallery">
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/purpleBlog.png')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/img2.jpg')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/img3.jpeg')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/anime1.jpeg')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/anime2.jpg')}}" alt=""></a>
+            </div>
+        </div>
+        
+    </section>
+</article> -->
+
+{% endblock %}

@@ -1,0 +1,86 @@
+article {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.panel-profile {
+    width: 100%;
+    height: 250px;
+    background: #F18C8E;
+}
+
+.profile-picture {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: #305F72 2px solid;
+    background: #F1D1B5;
+    margin-top: 130px;
+    position: absolute;
+    z-index: 0;
+}
+
+.profile-picture img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.status{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: green;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.status {
+    bottom: 12px;
+    right: 12px;
+}
+
+.information-user{
+    width: 100%;
+    height: 500px;
+    background: #F0B7A4;
+    margin-top: 5px;
+}
+
+.information-user h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.information-user .effect{
+    position: relative;
+}
+
+.information-user .effect::after{
+    content: "";
+    border-left: #305F72 5px solid;
+    background: #F0B7A4;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: escritura 5s infinite alternate steps(25);
+}
+
+@keyframes escritura {
+    0%{width: 100%;}
+    25%{width: 75%;}
+    50%{width: 50%;}
+    75%{width: 25%;}
+    100%{width: 0%;}
+}
+

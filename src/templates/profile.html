@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %} Profile {% endblock %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles-profile.css')}}">
+<p>{{userAccount}}</p>
+
+<article>
+    <section>
+        <div class="panel-profile">
+            <div class="profile-picture">
+                <img src="{{url_for('static', filename='img/contact-two.png')}}" alt="">
+                <div class="status">
+
+                </div>
+            </div>
+        </div>
+        <div class="information-user">
+            <h1><span class="effect">COMING SOON! .</span></h1>
+        </div>
+    </section>
+</article>
+
+{% endblock %}

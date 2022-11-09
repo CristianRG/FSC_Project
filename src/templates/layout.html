@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles-layout.css')}}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <!-- <img src="{{url_for('static', filename='img/secure-iconThree.png')}}" alt=""> -->
+            <p>Seguridad Universitaria</p>
+            <a href="/loggin">Inicia sesion</a>
+            <a href="/register">Registrate</a>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+    <footer>
+        &copy; Equipo 5. Seguridad Universitaria. 2022 - 2022 
+    </footer>
+</body>
+</html>
